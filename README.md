@@ -33,9 +33,9 @@ Experiência na área da saúde (Enfermagem) aplicada à tecnologia, com foco em
 
 ## 🔗 Acesse o projeto
 
-👉 [Portfólio Online](https://wisleygomes.github.io/landing-page)
+👉 [Portfólio Online](https://wisleygomes.github.io/port-wisley)
 
 ## 📬 Contato
 
 - GitHub: https://github.com/wisleygomes
-- LinkedIn: (adicione aqui quando criar/atualizar)
+- LinkedIn: (https://www.linkedin.com/in/wisley-gomes-710537359/)
