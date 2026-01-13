@@ -1,0 +1,198 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --preto: #0b0b0f;
+  --roxo: #7b2cbf;
+  --roxo-claro: #9d4edd;
+  --cinza: #cfcfcf;
+  --branco: #ffffff;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: var(--preto);
+  color: var(--cinza);
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: var(--roxo-claro);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--branco);
+}
+
+/* HEADER */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0b0f, #1a0b2e);
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  color: var(--branco);
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--cinza);
+  font-weight: 500;
+}
+
+/*imagm*/
+#profile img {
+  width: 112px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: var(--branco);
+}
+
+.hero-content p {
+  margin: 15px 0 30px;
+  font-size: 1.1rem;
+}
+
+/* BOTÃO */
+.btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--roxo), var(--roxo-claro));
+  color: var(--branco);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--branco);
+}
+
+/* SOBRE */
+#sobre p {
+  max-width: 700px;
+}
+
+/* PROJETOS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #130f1f;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(123, 44, 191, 0.3);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--roxo);
+}
+
+.project-card h3 {
+  color: var(--branco);
+  margin-bottom: 10px;
+}
+
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+/* HABILIDADES */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #1c1333;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(157, 78, 221, 0.3);
+}
+
+/* CONTATO */
+.contact-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #777;
+}
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
